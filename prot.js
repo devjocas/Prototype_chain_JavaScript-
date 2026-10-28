@@ -18,3 +18,20 @@ console.log("O nome do meu cachorro chama-se: ", cachorro.nome) // Bob -Existe n
 console.log(cachorro.comer) // undefined  - nao existe em nenhuma parte da cadeia
 console.log(cachorro.dono)
 console.log(cachorro.raca("Pastor Alemão"))
+
+
+//Criando funcao construtora e definir instancia da funcao 
+
+function Person(first,last, age, male, interests){
+   this.first = first
+   this.last = last
+   this.age = age
+   this.male = male
+   this.interests = interests
+}
+
+const person_1 = new Person("Devjocas", "Jocas", 32, "Man", ["JavaScript", "Python", "Node.js"])
+console.log(person_1)
+const pessoa =  person_1
+console.log("meu primeiro interese em estudar é: ", pessoa.interests[0])
+console.log("Eu chamo-me: ",pessoa.first)
