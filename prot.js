@@ -42,3 +42,15 @@ Person.prototype.farewell = function(){
     console.log('O nome alterado com sucesso: ' + this.first )
 }
 person_1.farewell()
+
+//Construtor com prop de definição
+
+function Pessoa(nome){
+    this.nome=nome
+}
+
+Pessoa.prototype.saudar=function(){
+    console.log(`Ola! meu nome é ${this.nome}`)
+}
+const devJocas = new Pessoa("DevJocas")
+devJocas.saudar()
