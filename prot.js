@@ -35,3 +35,10 @@ console.log(person_1)
 const pessoa =  person_1
 console.log("meu primeiro interese em estudar é: ", pessoa.interests[0])
 console.log("Eu chamo-me: ",pessoa.first)
+pessoa.first = 'DevEliseu'
+
+//Modificando o prototype
+Person.prototype.farewell = function(){
+    console.log('O nome alterado com sucesso: ' + this.first )
+}
+person_1.farewell()
