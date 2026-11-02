@@ -1,100 +1,100 @@
 // //SEM ENCAPSULAMENTO
 
 
-// class Conta{
-//     constructor(saldo){
-//         this.saldo=saldo; //publico
-//     }
-// }
+class Conta{
+    constructor(saldo){
+        this.saldo=saldo; //publico
+    }
+}
 
-// const conta= new Conta(100)
-// conta.saldo=-500
-// console.log(conta)
+const conta= new Conta(100)
+conta.saldo=-500
+console.log(conta)
 
-//Com campos privados
+Com campos privados
 
-// class ContaBancaria {
-//   #saldo;
+class ContaBancaria {
+  #saldo;
 
-//   constructor(saldoInicial) {
-//     if (saldoInicial < 0) {
-//       throw new Error("O saldo inicial não pode ser negativo.");
-//     }
-//     this.#saldo = saldoInicial;
-//   }
+  constructor(saldoInicial) {
+    if (saldoInicial < 0) {
+      throw new Error("O saldo inicial não pode ser negativo.");
+    }
+    this.#saldo = saldoInicial;
+  }
 
-//   depositar(valor) {
-//     if (valor <= 0) {
-//       throw new Error("O valor deve ser positivo.");
-//     }
-//     this.#saldo += valor;
-//   }
+  depositar(valor) {
+    if (valor <= 0) {
+      throw new Error("O valor deve ser positivo.");
+    }
+    this.#saldo += valor;
+  }
 
-//   levantar(valor) {
-//     if (valor > this.#saldo) {
-//       throw new Error("Saldo insuficiente.");
-//     }
-//     this.#saldo -= valor;
-//   }
+  levantar(valor) {
+    if (valor > this.#saldo) {
+      throw new Error("Saldo insuficiente.");
+    }
+    this.#saldo -= valor;
+  }
 
-//   get saldo() {
-//     return this.#saldo;
-//   }
-// }
+  get saldo() {
+    return this.#saldo;
+  }
+}
 
-// const conta = new ContaBancaria(100);
-// conta.depositar(50);
+const conta = new ContaBancaria(100);
+conta.depositar(50);
 
-// console.log(conta.saldo); // 150
-// // conta.#saldo = -1000; // SyntaxError
+console.log(conta.saldo); // 150
+// conta.#saldo = -1000; // SyntaxError
 
-//Getters e setters
+Getters e setters
 
-// class Usuario {
-//   #email;
+class Usuario {
+  #email;
 
-//   constructor(email) {
-//     this.email = email;
-//   }
+  constructor(email) {
+    this.email = email;
+  }
 
-//   get email() {
-//     return this.#email;
-//   }
+  get email() {
+    return this.#email;
+  }
 
-//   set email(novoEmail) {
-//     if (!novoEmail.includes("@")) {
-//       throw new Error("E-mail inválido.");
-//     }
-//     this.#email = novoEmail;
-//   }
-// }
+  set email(novoEmail) {
+    if (!novoEmail.includes("@")) {
+      throw new Error("E-mail inválido.");
+    }
+    this.#email = novoEmail;
+  }
+}
 
-// const usuario = new Usuario("ana@exemplo.com");
-// console.log(usuario.email); // ana@exemplo.com
+const usuario = new Usuario("ana@exemplo.com");
+console.log(usuario.email); // ana@exemplo.com
 
-// usuario.email = "novo@exemplo.com"; // passa pelo setter
-// // usuario.email = "invalido"; // lança erro
+usuario.email = "novo@exemplo.com"; // passa pelo setter
+// usuario.email = "invalido"; // lança erro
 
-// class User{
-//     #nome;
-//     constructor(nome){
-//         this.#nome=nome
-//     }
-//     //usando encapsulamento com getter e setters
-//     get dizerNome(){
-//         return this.#nome
-//     }
-//     set dizerNome(novoNome){
-//         if(!novoNome.startsWith("Dev")){
-//             throw new Error("O nome deve começar com Dev.")
-//         }
-//         this.#nome=novoNome
-//     }
-// }
+class User{
+    #nome;
+    constructor(nome){
+        this.#nome=nome
+    }
+    //usando encapsulamento com getter e setters
+    get dizerNome(){
+        return this.#nome
+    }
+    set dizerNome(novoNome){
+        if(!novoNome.startsWith("Dev")){
+            throw new Error("O nome deve começar com Dev.")
+        }
+        this.#nome=novoNome
+    }
+}
 
-// const user= new User('DevJocas')
-// user.dizerNome = "Ana"
-// console.log(user.dizerNome)
+const user= new User('DevJocas')
+user.dizerNome = "Ana"
+console.log(user.dizerNome)
 
 
 // usando convenção underscore, metodo protegidos
