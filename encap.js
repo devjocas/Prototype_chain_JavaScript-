@@ -11,7 +11,7 @@ const conta= new Conta(100)
 conta.saldo=-500
 console.log(conta)
 
-Com campos privados
+// Com campos privados
 
 class ContaBancaria {
   #saldo;
@@ -48,7 +48,7 @@ conta.depositar(50);
 console.log(conta.saldo); // 150
 // conta.#saldo = -1000; // SyntaxError
 
-Getters e setters
+// Getters e setters
 
 class Usuario {
   #email;
