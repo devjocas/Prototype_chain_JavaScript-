@@ -284,4 +284,4 @@ Produto: Teclado | Preço: R$ 180.00
 - [MDN — Campos privados](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes/Private_elements)
 ```
 
-Você pode salvar esse conteúdo num arquivo chamado `README.md`, na raiz do repositório. Os conceitos de getters, setters, campos privados, métodos estáticos e herança seguem a documentação oficial do MDN. [developer.mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide...)
+Criado por DevJocas,  os conceitos de getters, setters, campos privados, métodos estáticos e herança seguem a documentação oficial do MDN. [developer.mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide...)
