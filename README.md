@@ -284,4 +284,4 @@ Produto: Teclado | Preço: R$ 180.00
 - [MDN — Campos privados](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes/Private_elements)
 ```
 
-Criado por DevJocas,  os conceitos de getters, setters, campos privados, métodos estáticos e herança seguem a documentação oficial do MDN. [developer.mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide...)
+Criado por DevJocas,  os conceitos de getters, setters, campos privados, métodos estáticos e herança seguem a documentação oficial do MDN.
